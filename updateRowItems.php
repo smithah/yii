@@ -1,0 +1,1 @@
+Yii::$app->db->createCommand()->update('payment_advice_invoice', ['InvoiceNumber' => $rowItems[$i][1],'derived_net_amount' => $rowItems[$i][2]], 'InvoiceNumber LIKE \''.$rowItems[$i][0].'\'')->execute();
